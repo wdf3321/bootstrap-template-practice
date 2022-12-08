@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./bootstrap.css" />
+		<link rel="stylesheet" href="./bootstrap-icons-1.10.2/bootstrap-icons.css" />
+		<style>
+			:root {
+				--bs-coffee-rgb: 60, 40, 0;
+			}
+			.bg-coffee {
+				--bs-bg-opacity: 1;
+				background-color: rgba(var(--bs-coffee-rgb), var(--bs-bg-opacity)) !important;
+			}
+			#asd .carousel-item img {
+				object-fit: cover;
+			}
+			#kard {
+				height: 75vh;
+				justify-content: space-evenly;
+				align-items: stretch;
+				align-content: stretch;
+				flex-wrap: wrap;
+			}
+
+
+			@media (max-width: 767px) {
+
+				.card {
+					width: 100% !important;
+					height: 80% !important;
+				}
+				.carousel-item img {
+					height: 75% !important;
+				}
+				#section02 {
+					height: 200vh;
+				}
+				#section03 {
+					height:200vh;
+				}
+				#section04 {
+					height: 50vh;
+					margin-bottom: 3rem;
+				}
+				#section05 {
+					height: 85vh;
+					margin-bottom: 2rem !important;
+				}
+				#footer {
+					height: 50vh;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- navbar 是flexbox
+		fixed-top 固定在上方 
+		fixed-bottom 固定在下方
+		navbar-expand指通過某斷點展開導覽列 若無class 導覽列將處於摺疊狀態
+		navbar-light 文字變成黑色
+		navbar-dark 文字變成白色
+				-->
+		<script src="./bootstrap.bundle.js"></script>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top d-flex">
+			<div class="container-fluid">
+				<!-- container-fluid 滿版 container 固定寬度 -->
+				<a class="navbar-brand" href="#">泰山咖啡莊園</a>
+				<!-- 漢堡按鈕 -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- 選單區 -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" href="#section01">菜單餐點</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section02">周邊景點</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section04">莊園位置</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section05">聯絡我們</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 輪播 -->
+		<section id="section01">
+			<div id="car">
+				<div id="asd" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#asd"
+							data-bs-slide-to="0"
+							class="active"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#asd"
+							data-bs-slide-to="1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#asd"
+							data-bs-slide-to="2"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://picsum.photos/1920/1080/?random=10" class="d-block w-100" />
+						</div>
+						<div class="carousel-item">
+							<img src="https://picsum.photos/1920/1080/?random=9" class="d-block w-100" />
+						</div>
+						<div class="carousel-item">
+							<img src="https://picsum.photos/1920/1080/?random=8" class="d-block w-100" />
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#asd"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#asd"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!--       card       -->
+		<section id="section02">
+			<div class="container-md">
+				<div class="d-flex mt-5 border-light" id="kard">
+					<div class="card mt-5 h-75 w-25">
+						<img src="https://picsum.photos/300/200/?random=10" class="card-img-top" />
+						<div class="card-body">
+							<h5 class="card-title">Lorem ipsum dolor</h5>
+							<p class="card-text">
+								缺乏中文不可以義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧
+								客合作德國採購今年也在一致也不，瀏覽次數不斷討論文字，缺乏中文不可以
+								義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧客合作德國採購
+								今年也在一致也不，瀏覽次數不斷討論文字義務她的製品使用革命感覺業主表
+								演，標題一會兒召開信心奧客合作德國採購今年也在一致也不，瀏覽次數不斷 討論文字
+							</p>
+						</div>
+					</div>
+					<div class="card mt-5 h-75 w-25">
+						<img src="https://picsum.photos/300/200/?random=9" class="card-img-top" />
+						<div class="card-body">
+							<h5 class="card-title">Lorem ipsum dolor</h5>
+							<p class="card-text">
+								缺乏中文不可以義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧
+								客合作德國採購今年也在一致也不，瀏覽次數不斷討論文字，缺乏中文不可以
+								義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧客合作德國採購
+								今年也在一致也不，瀏覽次數不斷討論文字義務她的製品使用革命感覺業主表
+								演，標題一會兒召開信心奧客合作德國採購今年也在一致也不，瀏覽次數不斷 討論文字
+							</p>
+						</div>
+					</div>
+					<div class="card mt-5 h-75 w-25">
+						<img src="https://picsum.photos/300/200/?random=8" class="card-img-top" />
+						<div class="card-body">
+							<h5 class="card-title">Lorem ipsum dolor</h5>
+							<p class="card-text">
+								缺乏中文不可以義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧
+								客合作德國採購今年也在一致也不，瀏覽次數不斷討論文字，缺乏中文不可以
+								義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧客合作德國採購
+								今年也在一致也不，瀏覽次數不斷討論文字義務她的製品使用革命感覺業主表
+								演，標題一會兒召開信心奧客合作德國採購今年也在一致也不，瀏覽次數不斷 討論文字
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section03">
+			<div class="w-100 mb-5 bg-secondary text-light">
+				<div class="row d-flex h-50 m-0">
+					<div class="col-12 col-md-6 p-md-0 p-0">
+						<img class="w-100 h-100"src="https://picsum.photos/2000/2000/?random=9">
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+						<h1 class="">COFFEE</h1>
+						<h5 class="p-5">
+						感到有意做到深深估計貢獻製造確實升級一項防止附件過來填寫，章節演出認定這些承諾案例哈哈做法點這裡，所在
+						地很多負責些什麼影片不去超過天然主義，另一個目的回覆風景關閉大賽你沒有沒有，他們毫無手裡受到經過複雜有着
+						法規願意到底現有，告訴對你像是便利商店體現不詳的。告訴對你像是
+						</h5>
+						<a class="btn btn-success" href="#section01">See it</a>
+					</div>
+				</div>
+					<div class="row d-flex h-50 flex-column-reverse flex-md-row">
+					<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center ">
+						<h1 class="">COFFEE</h1>
+						<h5 class="p-5">
+						感到有意做到深深估計貢獻製造確實升級一項防止附件過來填寫，章節演出認定這些承諾案例哈哈做法點這裡，所在
+						地很多負責些什麼影片不去超過天然主義，另一個目的回覆風景關閉大賽你沒有沒有，他們毫無手裡受到經過複雜有着
+						法規願意到底現有，告訴對你像是便利商店體現不詳的。告訴對你像是
+						</h5>
+						<a class="btn btn-success" href="#section01">See it</a>
+					</div>
+					<div class="col-12 col-md-6 p-md-0 h-50">
+						<img class="w-100 h-100"src="https://picsum.photos/2000/2000/?random=10"></div>
+				</div>
+			</div>
+		</section>
+		<section id="section04">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 mb-5">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.700952573984!2d121.41673676500635!3d25.044220783967425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1670459077749!5m2!1szh-TW!2stw"
+							class="ratio"
+							style="height: 50vh"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section05">
+			<div class="container text-center mb-5">
+				<div class="row">
+					<div class="col-mb-12 text-center mb-5">
+						<h1>聯絡我們</h1>
+						<h2>泰山咖啡莊園,傳承coding精神</h2>
+						<h6>任何問服務問題或服務,歡迎您透過客服表單告知我們,謝謝</h6>
+					</div>
+					<div class="col">
+						<form class="row g-3">
+							<div class="col-md-6">
+								<label for="validationServer02" class="form-label">姓名</label>
+								<div class="input-group">
+									<input type="text" class="form-control" />
+									<button class="btn btn-outline-secondary" type="button">先生</button>
+									<button class="btn btn-outline-secondary" type="button">小姐</button>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="validationServer02" class="form-label">電話</label>
+								<input type="text" class="form-control" id="validationServer02" required />
+							</div>
+							<div class="col-md-6">
+								<label for="validationServerUsername" class="form-label">電子信箱</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="validationServerUsername" required />
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="validationServer04" class="form-label">問題類型</label>
+								<select class="form-select" id="validationServer04" required>
+									<option selected disabled value="">餐飲建議</option>
+									<option>餐飲建議</option>
+									<option>餐飲建議</option>
+									<option>餐飲建議</option>
+								</select>
+							</div>
+							<div class="col-md-12">
+								<div class="form-floating">
+									<textarea
+										class="form-control"
+										id="floatingTextarea2"
+										style="height: 150px"
+									></textarea>
+									<label for="floatingTextarea2">問題內容</label>
+								</div>
+							</div>
+							<div class="col-md-4 text-start">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="flexCheckChecked"
+										checked
+									/>
+									<label class="form-check-label" for="flexCheckChecked">
+										訂閱泰山莊園電子報
+									</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button class="btn btn-primary" type="button">送出</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<div class="container-fluid bg-dark text-light h-100">
+				<div class="row" style="align-items: center">
+					<div class="col-md-1"></div>
+					<div class="col-5 col-md-2 ms-4 mt-5 mb-5">
+						<img
+							src="https://picsum.photos/500/500/?random=10"
+							class="w-75 h-auto rounded-circle"
+						/>
+					</div>
+					<div class="col-5 col-md-2">
+						<p>
+							Address <br />
+							1234 Street Name <br />
+							City , AA 99999
+						</p>
+					</div>
+					<div class="col-6 col-md-3 mb-1">
+						LINK <br />
+						Website Builder <br />
+						Download for Windows <br />
+						Download for Mac
+					</div>
+					<div class="col-5 col-md-3 mb-1 ">
+						Contacts <br />
+						Email:asdasd@gmail.com <br />
+						+1 (0) 000 0000 000 <br />
+						+1 (0) 000 0000 000
+					</div>
+					<div class="col-12 col-md-12"><hr></div>
+					<div class="col-12 col-md-12 text-center">
+						&copy; Copyright 2022 wdf3321 Change - All rights reserved
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
